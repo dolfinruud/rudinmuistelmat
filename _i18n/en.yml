@@ -1,0 +1,9 @@
+global:
+    site:
+        title: "Major's Memoirs"
+    author:
+        name: "Jere 'Major' Vänskä"
+        bio: "My blog!"
+default:
+    home: "Home"
+    about: "About"

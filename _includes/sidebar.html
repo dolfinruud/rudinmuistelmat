@@ -1,30 +1,32 @@
 <!-- sidebar.html -->
 <header class="sidebar-header" role="banner">
-	<a href="{{ site.BASE_PATH }}/">
+    {% if site.lang == 'fi' %}
+        <a href="{{ site.BASE_PATH }}/">
+    {% else %}
+        <a href="{{ site.BASE_PATH }}/{{ site.lang }}">
+    {% endif %}
+	
 		<img src="//www.gravatar.com/avatar/{{site.author.email_md5}}?s=150" class="img-circle" />
 	</a>
 	<h3 class="title">
-        <a href="{{ site.BASE_PATH }}/">{{ site.title }}</a>
+        {% if site.lang == 'fi' %}
+            <a href="{{ site.BASEURL_ROOT }}">{% translate global.site.title %}</a>
+        {% else %}
+            <a href="{{ site.BASEURL_ROOT }}">{% translate global.site.title %}</a>
+        {% endif %}
     </h3>
 </header>
 
 {% if site.author.bio %}
 <div id="bio" class="text-center">
-	{{ site.author.bio }}
+	{% translate global.author.bio %}
 </div>
 {% endif %}
 
 <div id="contact-list" class="text-center">
 	<ul class="list-unstyled list-inline">
-		{% if site.author.email %}
-		<li>
-			<a class="btn btn-default btn-sm" href="mailto:{{ site.author.email }}">
-				<i class="fa fa-envelope fa-lg"></i>
-			</a>
-		</li>
-		{% endif %}
 	</ul>
-    <a class="link-fi" href="{{ site.BASEURL_ROOT }}{{ page.url }}/">fi</a>
+    <a class="link-fi" href="{{ site.BASEURL_ROOT }}{{page.url}}">fi</a>
     <a class="link-sv" href="{{ site.BASEURL_ROOT }}/sv{{ page.url }}">sv</a>
     <a class="link-sv" href="{{ site.BASEURL_ROOT }}/en{{ page.url }}">en</a>
 </div>

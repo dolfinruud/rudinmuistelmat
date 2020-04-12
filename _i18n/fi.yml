@@ -1,0 +1,9 @@
+global:
+    site:
+        title: "Majurin Muistelmat"
+    author:
+        name: "Jere 'Majuri' Vänskä"
+        bio: "Mun blogi!"
+default:
+    home: "Etusivu"
+    about: "About"
