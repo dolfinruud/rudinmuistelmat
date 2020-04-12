@@ -1,8 +1,8 @@
 global:
     site:
-        title: "Majurens Memoirs"
+        title: "Majurens Memoaren"
     author:
         name: "Jere 'Majur' Vänskä"
         bio: "Min blog!"
 default:
-    home: "Hemsidan"
+    home: "Hemsida"
