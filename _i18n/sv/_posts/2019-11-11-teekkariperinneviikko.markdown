@@ -7,6 +7,7 @@ title: "Teknologtraditionsveckan"
     <img style="width:40%" src="/assets/fuksien_juhlasitsit.jpg">
     <img style="width:40%" src="/assets/Juhlasitsit.jpg">
 </div>
+<br>
 
 Höstens följande projekt var Fuksien Juhlasitsit! Teknologtraditionsveckan började med Fuksien Juhlasitsit som min kommittés phuxkaptener hade jobbat mycket för. Än en gång kunde jag säga att jag var (och ännu är) stolt över mina phuxkaptener och det är en glädje att leda FTMK.
 

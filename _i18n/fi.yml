@@ -7,3 +7,8 @@ global:
 default:
     home: "Etusivu"
     about: "About"
+    newer: "Uudemmat"
+    older: "Vanhemmat"
+    page: "Sivu"
+    next: "Seuraava"
+    previous: "Edellinen"

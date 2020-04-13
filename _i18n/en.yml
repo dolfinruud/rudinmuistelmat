@@ -7,3 +7,8 @@ global:
 default:
     home: "Home"
     about: "About"
+    newer: "Newer"
+    older: "Older"
+    page: "Page"
+    next: "Next"
+    previous: "Previous"
