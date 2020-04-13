@@ -42,25 +42,19 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>-->
-			{% if site.author.github %}
-			<a type="button" class="navbar-toggle nav-link" href="http://github.com/{{ site.author.github }}">
-				<i class="fa fa-github"></i>
-			</a>
-			{% endif %}
-			{% if site.author.twitter %}
-			<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/{{ site.author.twitter }}">
-				<i class="fa fa-twitter"></i>
-			</a>
-			{% endif %}
-			{% if site.author.email %}
-			<a type="button" class="navbar-toggle nav-link" href="mailto:{{ site.author.email }}">
-				<i class="fa fa-envelope"></i>
-			</a>
-			{% endif %}
-			<a class="navbar-brand" href="{{ site.BASEURL }}/">
+        {% if site.lang == 'fi' %}
+            <a class="navbar-brand" href="{{ site.BASEURL }}/">
+        {% else %}
+            <a class="navbar-brand" href="{{ site.BASEURL }}/{{ site.lang }}">
+        {% endif %}
 				<img src="{{ site.BASEURL }}/assets/cog.svg" class="img-h32" />
 				{{ site.title }}
 			</a>
+            <div style="float:right">
+                <a class="link-fi" href="{{ site.BASEURL_ROOT }}{{page.url}}">fi</a>
+                <a class="link-sv" href="{{ site.BASEURL_ROOT }}/sv{{ page.url }}">sv</a>
+                <a class="link-sv" href="{{ site.BASEURL_ROOT }}/en{{ page.url }}">en</a>
+            </div>
 		</div>
 
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
