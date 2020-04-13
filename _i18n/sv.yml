@@ -6,8 +6,8 @@ global:
         bio: "Min blog!"
 default:
     home: "Hemsida"
-    newer: "Newer"
-    older: "Older"
-    page: "Page"
-    next: "Next"
-    previous: "Previous"
+    newer: "Nyare"
+    older: "Äldre"
+    page: "Sida"
+    next: "Nästa"
+    previous: "Tidigare"
