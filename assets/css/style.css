@@ -3,6 +3,7 @@
 body{
     color: #2c3e50;
     background-color: seashell;
+    overflow: hidden;
 }
 
 .sidebar {
@@ -171,6 +172,10 @@ ul.dropdown-menu>li>a>i.fa {
     margin: -8px 5px -8px 0;
 }
 
+.countdownpage {
+    margin-top: -52.25px;
+}
+
 .countdown {
     width: 100%;
     max-height: 400px;
@@ -180,6 +185,7 @@ ul.dropdown-menu>li>a>i.fa {
 
 .countdown-newest {
     display: block;
+    width: 100%;
     max-width: 250px;
     margin: auto;
     margin-bottom: 1rem;
@@ -227,6 +233,7 @@ ul.dropdown-menu>li>a>i.fa {
 .navbar-red {
     background-color: #470303;
     border-color: #470303;
+    margin-bottom: 0;
 }
 /* Title */
 .navbar-red .navbar-brand {
