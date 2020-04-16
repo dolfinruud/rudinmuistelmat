@@ -4,7 +4,7 @@ title: "Wappulaskuri"
 permalink: /wappulaskuri/
 
 ---
-{% assign numbers = site.static_files | where: "number", true % | reverse %}
+{% assign numbers = site.static_files | where: "number", true | reverse %}
 {% assign existing_numbers = 0 %}
 
 <div class="container-fluid">

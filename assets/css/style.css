@@ -277,3 +277,12 @@ ul.dropdown-menu>li>a>i.fa {
     background-color: #5a0404;
 }
 
+.carousel-inner .item {
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+.carousel-inner .item img {
+    height: 70vh;
+}
+
