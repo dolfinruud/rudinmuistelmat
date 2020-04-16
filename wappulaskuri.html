@@ -23,11 +23,15 @@ permalink: /wappulaskuri/
             {% for image in numbers %}
             {% if forloop.last %}
             <div class="item active">
-                <img src="{{site.BASEURL}}{{image.path}}" />
+                <div class="img-container">
+                    <img src="{{site.BASEURL}}{{image.path}}" />
+                </div>
             </div>
             {% else %}
             <div class="item">
-                <img src="{{site.BASEURL}}{{image.path}}" />
+                <div class="img-container">
+                    <img src="{{site.BASEURL}}{{image.path}}" />
+                </div>
             </div>
             {% endif %}
             {% endfor %}
