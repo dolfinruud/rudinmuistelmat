@@ -201,6 +201,21 @@ ul.dropdown-menu>li>a>i.fa {
     max-width: 100%;
 }
 
+#countdownCarousel {
+    background: #000;
+    margin: 0 -15px;
+}
+
+.carousel-inner .item {
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+.carousel-inner .item img {
+    height: 100vh;
+}
+
+
 /* navbar */
 .navbar-red {
     background-color: #470303;
@@ -274,13 +289,3 @@ ul.dropdown-menu>li>a>i.fa {
 .navbar-red li > a:hover{
     background-color: #5a0404;
 }
-
-.carousel-inner .item {
-    text-align: center;
-    text-align: -webkit-center;
-}
-
-.carousel-inner .item img {
-    height: 70vh;
-}
-
