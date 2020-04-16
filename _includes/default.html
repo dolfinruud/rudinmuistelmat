@@ -50,11 +50,7 @@
 				<img src="{{ site.BASEURL }}/assets/cog.svg" class="img-h32" />
 				{% t global.site.title %}
 			</a>
-            {% assign numbers = site.static_files | where: "number", true % | reverse %}
             <div style="float:right">
-                <a href="{{ site.BASEURL_ROOT}}/wappulaskuri">
-                    <img style="height:50px"class="countdown-newest" src="{{ numbers.last.path }}">
-                </a>
                 <div style="float:right">
                     <a class="link-fi" href="{{ site.BASEURL_ROOT }}{{page.url}}">fi</a>
                     <a class="link-sv" href="{{ site.BASEURL_ROOT }}/sv{{ page.url }}">sv</a>
@@ -89,6 +85,11 @@
 
 		</ul>
 	</div> -->
+
+	{% assign numbers = site.static_files | where: "number", true % | reverse %}
+	<a class="countdown-header visible-xs" style="background:url({{ numbers.last.path }}) no-repeat center center; background-size: cover;" href="{{ site.BASEURL_ROOT}}/wappulaskuri">
+		<button class="btn btn-countdown">Wappulaskuri ></button>
+	</a>
 
 	<div class="col-sm-3 sidebar hidden-xs" style="{% if site.sidebar_background_image %}background: url({{site.sidebar_background_image}}) no-repeat !important;{% endif %}">
 		{% include sidebar.html %}
