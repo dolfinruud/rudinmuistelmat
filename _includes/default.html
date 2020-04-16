@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.titleÂ }}{% endif %}</title>
 	{% if page.description %}
 	<meta name="description" content="{{ page.description }}">
 	{% endif %}
@@ -50,10 +50,16 @@
 				<img src="{{ site.BASEURL }}/assets/cog.svg" class="img-h32" />
 				{% t global.site.title %}
 			</a>
+            {% assign numbers = site.static_files | where: "number", true % | reverse %}
             <div style="float:right">
-                <a class="link-fi" href="{{ site.BASEURL_ROOT }}{{page.url}}">fi</a>
-                <a class="link-sv" href="{{ site.BASEURL_ROOT }}/sv{{ page.url }}">sv</a>
-                <a class="link-sv" href="{{ site.BASEURL_ROOT }}/en{{ page.url }}">en</a>
+                <a href="{{ site.BASEURL_ROOT}}/wappulaskuri" style="margin-left:10px;">
+                    <img style="height:50px"class="countdown-newest" src="{{ numbers.last.path }}">
+                </a>
+                <div style="float:right">
+                    <a class="link-fi" href="{{ site.BASEURL_ROOT }}{{page.url}}">fi</a>
+                    <a class="link-sv" href="{{ site.BASEURL_ROOT }}/sv{{ page.url }}">sv</a>
+                    <a class="link-sv" href="{{ site.BASEURL_ROOT }}/en{{ page.url }}">en</a>
+                </div>
             </div>
 		</div>
 
