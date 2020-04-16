@@ -23,20 +23,16 @@ permalink: /wappulaskuri/
             {% for image in numbers %}
             {% if forloop.last %}
             <div class="item active">
-                <div class="img-container">
-                    <img src="{{site.BASEURL}}{{image.path}}" />
-                </div>
+                <img src="{{site.BASEURL}}{{image.path}}" />
             </div>
             {% else %}
             <div class="item">
-                <div class="img-container">
-                    <img src="{{site.BASEURL}}{{image.path}}" />
-                </div>
+                <img src="{{site.BASEURL}}{{image.path}}" />
             </div>
             {% endif %}
             {% endfor %}
         </div>
-        
+
         <a class="left carousel-control" href="#countdownCarousel" data-slide="prev">
             <span class="icon-prev fa fa-angle-left"></span>
             <span class="sr-only">Previous</span>
