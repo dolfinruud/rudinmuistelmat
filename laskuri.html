@@ -4,7 +4,9 @@ title: "Laskuri"
 permalink: /laskuri/
 
 ---
-
-{% for number in (0..13) reversed %}
-    {{number}}
+{% for image in site.static_files reversed %}
+    {% if image.path contains 'assets/numbers' %}
+        <img src="{{site.BASEURL}}{{image.path}}" />
+    {% endif %}
 {% endfor %}
+
