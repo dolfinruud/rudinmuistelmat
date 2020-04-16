@@ -30,12 +30,12 @@
 
 		<ul class="pager">
 		  {% if page.previous %}
-		  <li class="previous"><a href="{{ site.BASEURL_ROOT }}/{{ site.lang | replace: 'fi', ''}}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; {% t default.previous %}</a></li>
+		  <li class="previous"><a href="{{ site.BASEURL_ROOT }}{{ '/' | append: site.lang | replace: '/fi'}}{{ page.previous.url }}" title="{{ page.previous.title }}">{{site.lang}}&larr; {% t default.previous %}</a></li>
 		  {% else %}
 		  <li class="previous disabled"><a>&larr; {% t default.previous %}</a></li>
 		  {% endif %}
 		  {% if page.next %}
-		  <li class="next"><a href="{{ site.BASEURL_ROOT }}/{{ site.lang | replace: 'fi', ''}}{{ page.next.url }}" title="{{ page.next.title }}">{% t default.next %} &rarr;</a></li>
+		  <li class="next"><a href="{{ site.BASEURL_ROOT }}{{ '/' | append: site.lang | replace: '/fi'}}{{ page.next.url }}" title="{{ page.next.title }}">{% t default.next %} &rarr;</a></li>
 		  {% else %}
 			<li class="next disabled"><a>{% t default.next %} &rarr;</a>
 		  {% endif %}
