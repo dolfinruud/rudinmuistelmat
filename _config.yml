@@ -34,7 +34,13 @@ author:
 
 rss_path: feed.xml
 categories_path: categories.html
-tags_path: tags.html
+tags_path: tags.
+
+defaults:
+  - scope:
+      path: "assets/numbers"
+    values:
+      number: true
 
 
 # Build settings

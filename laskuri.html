@@ -4,9 +4,21 @@ title: "Laskuri"
 permalink: /laskuri/
 
 ---
-{% for image in site.static_files reversed %}
-    {% if image.path contains 'assets/numbers' %}
-        <img src="{{site.BASEURL}}{{image.path}}" />
+{% assign numbers = site.static_files | where: "number", true % | reverse %}
+{% assign existing_numbers = 0 %}
+<br>
+{% for image in numbers %}
+    {% if forloop.last %}
+        <img width="100" src="{{site.BASEURL}}{{image.path}}" />
+    {% else %}
+        <img width="10" src="{{site.BASEURL}}{{image.path}}" />
     {% endif %}
+    {% assign existing_numbers = existing_numbers | plus: 1 %}
+{% endfor %}
+{% assign dummy_amount = 13 | minus: existing_numbers %}
+{% for dummy in (0..dummy_amount) %}
+    <img width="10" src="{{site.BASEURL}}/assets/kysymysmerkki.png" />
 {% endfor %}
 
+
+ 
