@@ -167,12 +167,16 @@ ul.dropdown-menu>li>a>i.fa {
 }
 
 .img-h32 {
-    max-height: 34px;
+    max-height: 30px;
     margin: -8px 5px -8px 0;
 }
 
+.carouselcontainer {
+    height: calc(100vh - 50px);
+}
+
 .countdownpage {
-    margin-top: -52.25px;
+    height: 100%;
 }
 
 .countdown {
@@ -219,7 +223,7 @@ ul.dropdown-menu>li>a>i.fa {
 }
 
 #countdownCarousel {
-    height: 100vh;
+    height: 100%;
     background: #000;
     margin: 0 -15px;
 }
@@ -243,7 +247,7 @@ ul.dropdown-menu>li>a>i.fa {
 /* navbar */
 .navbar-red {
     background-color: #470303;
-    border-color: #470303;
+    border: none;
     margin-bottom: 0;
 }
 /* Title */

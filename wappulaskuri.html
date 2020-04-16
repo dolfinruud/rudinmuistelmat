@@ -7,7 +7,7 @@ permalink: /wappulaskuri/
 {% assign numbers = site.static_files | where: "number", true | reverse %}
 {% assign existing_numbers = 0 %}
 
-<div class="container-fluid">
+<div class="container-fluid carouselcontainer">
     <div id="countdownCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             {% for image in numbers %}
