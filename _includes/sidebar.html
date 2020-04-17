@@ -35,6 +35,8 @@
 
 <div class="countdown">
     <img class="countdown-newest" src="{{ numbers.last.path }}">
-    <a class="btn countdown-button" href="{{ site.BASEURL_ROOT}}/wappulaskuri">Wappulaskuri ></a>
+    <a class="btn countdown-button" href="{{ site.BASEURL_ROOT}}{{ '/' | append: site.lang | replace: '/fi', ''}}/wappulaskuri">
+        {% t default.wappuCounter %} >
+    </a>
 </div>
 <!-- sidebar.html end -->

@@ -12,3 +12,4 @@ default:
     page: "Page"
     next: "Next"
     previous: "Previous"
+    wappuCounter: "Wappu Countdown"
