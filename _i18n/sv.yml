@@ -11,4 +11,4 @@ default:
     page: "Sida"
     next: "Nästa"
     previous: "Tidigare"
-    wappuCounter: "Wappens Nedräkning"
+    wappuCounter: "Wappenscountdown"
