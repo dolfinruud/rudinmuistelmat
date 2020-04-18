@@ -325,4 +325,21 @@ ul.dropdown-menu>li>a>i.fa {
     background-color: #5a0404;
 }
 
+.header-counter-btn-wrapper {
+    border-radius:10%/20%;
+    margin:10px;
+    height:30px;
+    width:60px;
+    box-sizing: border-box;
+    background-size: cover;
+    box-shadow: inset white 2px 2px 5px;
+}
 
+.header-counter-btn {
+    border-radius:10%/20%;
+    height:100%;
+    width:100%;
+    box-sizing: border-box;
+    background-size: cover;
+    box-shadow: inset black -2px -2px 5px;
+}
