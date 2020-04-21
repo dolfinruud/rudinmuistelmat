@@ -54,7 +54,7 @@
                 {% assign numbers = site.static_files | where: "number", true % | reverse %}
                 {% if page.url != '/' %}
                     <div class="header-counter-btn-wrapper"
-                        style="background:url({{ numbers.last.path }}) no-repeat center center;background-size:cover;">
+                        style="background:url({{ site.BASEURL }}/assets/08.jpg) no-repeat center center;background-size:cover;">
                         <a class="visible-xs header-counter-btn" 
                             href="{{ site.BASEURL_ROOT}}{{ '/' | append: site.lang | replace: '/fi', ''}}/wappulaskuri">
                         </a>
@@ -98,7 +98,7 @@
 	{% assign numbers = site.static_files | where: "number", true % | reverse %}
     {% if page.url == '/' %}
         <a class="countdown-header visible-xs" 
-            style="background:url({{ numbers.last.path }}) no-repeat center center; background-size: cover;" 
+            style="background:url({{ site.BASEURL }}/assets/08.jpg) no-repeat center center; background-size: cover;" 
             href="{{ site.BASEURL_ROOT}}{{ '/' | append: site.lang | replace: '/fi', ''}}/wappulaskuri">
             <button class="btn btn-countdown" style="opacity:0.8">{% t default.wappuCounter %} ></button>
         </a>
