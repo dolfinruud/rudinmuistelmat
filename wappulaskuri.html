@@ -23,7 +23,9 @@ permalink: /wappulaskuri/
             {% for image in numbers %}
             {% if forloop.last %}
             <div class="item active">
-                <img src="{{site.BASEURL}}{{image.path}}" />
+                <video controls>
+                    <source src="{{site.BASEURL}}{{image.path}}" type="video/mp4" />
+                </video>
             </div>
             {% else %}
             <div class="item">
