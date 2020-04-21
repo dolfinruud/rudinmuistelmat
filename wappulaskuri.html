@@ -23,8 +23,8 @@ permalink: /wappulaskuri/
             {% for image in numbers %}
             {% if forloop.last %}
             <div class="item active">
-                <video controls>
-                    <source src="{{site.BASEURL}}{{image.path}}" type="video/mp4" />
+                <video id="08video" controls>
+                    <source src="https://majurinmuistelmat.fi/assets/numbers/08.mp4" type="video/mp4" />
                 </video>
             </div>
             {% else %}
