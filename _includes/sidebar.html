@@ -34,7 +34,7 @@
 {% assign numbers = site.static_files | where: "number", true % | reverse %}
 
 <div class="countdown">
-    <img class="countdown-newest" src="{{ numbers.last.path }}">
+    <img class="countdown-newest" src="{{ site.BASEURL }}/assets/08.jpg">
     <a class="btn countdown-button" href="{{ site.BASEURL_ROOT}}{{ '/' | append: site.lang | replace: '/fi', ''}}/wappulaskuri">
         {% t default.wappuCounter %} >
     </a>
