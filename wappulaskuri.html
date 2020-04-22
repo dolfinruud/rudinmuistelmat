@@ -4,7 +4,7 @@ title: "Wappulaskuri"
 permalink: /wappulaskuri/
 
 ---
-{% assign numbers = site.static_files | where: "number", true | reverse %}
+{% assign numbers = site.static_files|where:"number",true|reverse%}
 {% assign existing_numbers = 0 %}
 
 <div class="container-fluid carouselcontainer">
@@ -22,16 +22,18 @@ permalink: /wappulaskuri/
         <div class="carousel-inner">
             {% for image in numbers %}
             {% if forloop.last %}
-            <div class="item active">
-                <video id="08video" style="width: 70%; height: 100%;" controls>
-                    <source src="{{site.BASEURL}}{{image.path}}" type="video/mp4" />
-                </video>
-            </div>
+                <div class="item active">
             {% else %}
-            <div class="item">
-                <img src="{{site.BASEURL}}{{image.path}}" />
-            </div>
+                <div class="item">
             {% endif %}
+                {% if image.path contains "mp4" %}
+                    <video id="08video" style="width: 70%; height: 100%;" controls>
+                        <source src="{{site.BASEURL}}{{image.path}}" type="video/mp4" />
+                    </video>
+                {% else %}
+                    <img src="{{site.BASEURL}}{{image.path}}" />
+                {% endif %}
+            </div>
             {% endfor %}
         </div>
 

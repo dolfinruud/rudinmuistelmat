@@ -41,6 +41,11 @@ defaults:
       path: "assets/numbers"
     values:
       number: true
+  - scope:
+      path: "assets/number_vid_thumbnails"
+    values:
+      number_vid_thumbnail: true
+
 
 
 # Build settings
