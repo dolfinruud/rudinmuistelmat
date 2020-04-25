@@ -27,7 +27,7 @@ permalink: /wappulaskuri/
                 <div class="item">
             {% endif %}
                 {% if image.path contains "mp4" %}
-                    <video id="08video" style="width: 70%; height: 100%;" poster="/assets/number_vid_thumbnails/{{ image.path | split: '/' | last | split: '.' | first }}.png" controls>
+                    <video id="{{ image.path | split: '/' | last | split: '.' | first }}video" style="width: 70%; height: 100%;" poster="/assets/number_vid_thumbnails/{{ image.path | split: '/' | last | split: '.' | first }}.png" controls>
                         <source src="{{site.BASEURL}}{{image.path}}" type="video/mp4" />
                     </video>
                 {% else %}

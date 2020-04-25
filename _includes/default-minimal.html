@@ -106,6 +106,13 @@
 			$("#08video").on("pause", function () {
 				$("#countdownCarousel").carousel("cycle");
 			});
+
+			$("#05video").on("play", function () {
+				$("#countdownCarousel").carousel("pause");
+			});
+			$("#05video").on("pause", function () {
+				$("#countdownCarousel").carousel("cycle");
+			});
 		});
 	</script>
 </body>
