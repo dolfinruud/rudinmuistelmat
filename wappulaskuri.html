@@ -30,6 +30,15 @@ permalink: /wappulaskuri/
                     <video id="{{ image.path | split: '/' | last | split: '.' | first }}video" style="width: 70%; height: 100%;" poster="/assets/number_vid_thumbnails/{{ image.path | split: '/' | last | split: '.' | first }}.png" controls>
                         <source src="{{site.BASEURL}}{{image.path}}" type="video/mp4" />
                     </video>
+                {% elsif image.path contains "pdf" %}
+                    <embed src="{{site.BASEURL}}{{image.path}}" width="500" height="375" type="application/pdf"></embed>
+                    <script>
+                        pdfjsLib.getDocument('{{site.BASEURL}}{{image.path}}');
+                        var loadingTask = pdfjsLib.getDocument('helloworld.pdf');
+                            loadingTask.promise.then(function(pdf) {
+                            // you can now use *pdf* here
+                        });
+                    </script>
                 {% else %}
                     <img src="{{site.BASEURL}}{{image.path}}" />
                 {% endif %}
