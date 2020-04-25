@@ -100,19 +100,13 @@
 
 	<script>
 		$(document).ready(function () {
-			$("#08video").on("play", function () {
-				$("#countdownCarousel").carousel("pause");
-			});
-			$("#08video").on("pause", function () {
-				$("#countdownCarousel").carousel("cycle");
-			});
-
-			$("#05video").on("play", function () {
-				$("#countdownCarousel").carousel("pause");
-			});
-			$("#05video").on("pause", function () {
-				$("#countdownCarousel").carousel("cycle");
-			});
+			$("video").on("play", function () {
+                console.log("playing");
+                $("#countdownCarousel").carousel("pause")
+            }).on("pause", function () {
+                console.log("paused");
+                $("#countdownCarousel").carousel("cycle")
+            });   
 		});
 	</script>
 </body>
