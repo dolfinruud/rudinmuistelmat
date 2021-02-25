@@ -7,17 +7,6 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>Jäynä Quiz for the Jäynä Finale!</title>
-				<description>&lt;p&gt;Jäynä sent me this quiz - test your knowledge of famous Jäynäs of the past, and come today at 16 to the Jäynä Finale to see more!&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; style=&quot;height:100vh&quot; src=&quot;https://awesome-bose-a9b2a2.netlify.app/&quot;&gt;&lt;/iframe&gt;
-</description>
-				<pubDate>Wed, 22 Apr 2020 00:00:00 +0300</pubDate>
-				<link>/2020/04/22/J%C3%A4yn%C3%A4visa-finaalin-ratoksi.html</link>
-				<guid isPermaLink="true">/2020/04/22/J%C3%A4yn%C3%A4visa-finaalin-ratoksi.html</guid>
-			</item>
-		
-			<item>
 				<title>2nd Commandment</title>
 				<description>&lt;p&gt;&lt;img src=&quot;/assets/2nd.commandment.jpg&quot; alt=&quot;2nd Commandment&quot; /&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align: center;&quot;&gt;
@@ -119,6 +108,22 @@
 				<pubDate>Mon, 18 Nov 2019 00:00:00 +0200</pubDate>
 				<link>/2019/11/18/International_Bachelor_of_Science-Annual_Freshmen_Sitsit.html</link>
 				<guid isPermaLink="true">/2019/11/18/International_Bachelor_of_Science-Annual_Freshmen_Sitsit.html</guid>
+			</item>
+		
+			<item>
+				<title>Teekkari tradition week and FCS</title>
+				<description>&lt;div style=&quot;text-align:center;&quot;&gt;
+    &lt;img style=&quot;width:40%&quot; src=&quot;/assets/fuksien_juhlasitsit.jpg&quot; /&gt;
+    &lt;img style=&quot;width:40%&quot; src=&quot;/assets/Juhlasitsit.jpg&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;
+The next project of the Autumn was the Freshmen Celebration Sitsit! Indeed, the Teekkari Tradition Week itself was kicked off by the Freshmen Celebration Sitsit, which the Freshmen Captains of my committee had been preparing for diligently. Once again I could say that I was proud (and still am) of my Freshmen Captains and that it is a pleasure to lead the FTMK.&lt;/p&gt;
+
+&lt;p&gt;There were outstanding performances and taste bud tickling food. Hopefully the Freshmen and their Captains enjoyed the Freshmen Celebration Sitsit at least as much as I did. The rest of the week was then filled with all kinds of various goodies: I myself took part in Poli’s Pub Crawl and the sing-through of the Red and not to forget the highlight of the whole week, the Teekkari Tradition Celebration. The week was truly magical and unforgettable. I for one am not ever going to forget the Teekkari Tradition Week of 2019!&lt;/p&gt;
+</description>
+				<pubDate>Mon, 11 Nov 2019 00:00:00 +0200</pubDate>
+				<link>/2019/11/11/teekkariperinneviikko.html</link>
+				<guid isPermaLink="true">/2019/11/11/teekkariperinneviikko.html</guid>
 			</item>
 		
 	</channel>
