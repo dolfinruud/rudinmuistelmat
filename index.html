@@ -3,26 +3,14 @@ layout: page
 tagline:
 ---
 
-<img src="/assets/2.pvakasky.jpg" alt="Käskyä ei löytynyt">
+<div class="content col-sm-9 col-sm-offset-3">
+{{/assets/2.pvakasky.jpg}}
+
 <p style="text-align: center;">
     <a  href="/assets/2.pvakasky.jpg"><button class="btn btn-outline-dark">Avaa</button></a>
 </p>
+</div>
 
-{% for post in paginator.posts %}
-
-<article class="home">
-
-  <h2>
-  {% if site.lang == 'fi' %}
-    <a href="{{ site.BASEURL_ROOT }}{{ post.url }}">{{ post.title }}</a>
-    {% else %}
-    <a href="{{ site.BASEURL_ROOT }}/{{ site.lang }}{{ post.url }}">{{ post.title }}</a>
-    {% endif %}
-  </h2>
-
-
-</article>
-{% endfor %}
 <hr/>
 
 
