@@ -1,8 +1,8 @@
 global:
     site:
-        title: "Majurin muistelmat"
+        title: "FTMK 2020"
     author:
-        name: "Jere 'Majuri' Vänskä"
+        name: "Rudi Nikander"
         bio: "Mun blogi!"
 default:
     home: "Etusivu"

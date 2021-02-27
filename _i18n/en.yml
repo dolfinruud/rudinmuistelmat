@@ -1,8 +1,8 @@
 global:
     site:
-        title: "Major's Memoirs"
+        title: "FTMK 2020"
     author:
-        name: "Jere 'Major' Vänskä"
+        name: "Rudi Niksula"
         bio: "My blog!"
 default:
     home: "Home"

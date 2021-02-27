@@ -1,8 +1,8 @@
 global:
     site:
-        title: "Majurens Memoarer"
+        title: "FTMK 2020"
     author:
-        name: "Jere 'Majur' Vänskä"
+        name: "Rudi Niksula"
         bio: "Min blog!"
 default:
     home: "Hemsida"
