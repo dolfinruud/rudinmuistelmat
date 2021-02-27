@@ -1,3 +1,1 @@
-Tää on mun blogi!
-
-- Jere
+<img src="/assets/2.pvakasky.jpg" alt="käsky kateissa">
