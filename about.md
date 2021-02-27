@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Ensimmäinen päiväkäsky
+title: About
 permalink: /about/
 
 ---
