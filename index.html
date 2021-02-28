@@ -3,9 +3,21 @@ layout: page
 tagline:
 ---
 
-
+{% for post in paginator.posts %}
 
 <article class="home">
+
+  <span class="post-date">
+    {% assign d = post.date | date: "%d" | plus:'0' %}
+    {{ post.date | date: "%B" }}
+    {% case d %}
+    {% when 1 or 21 or 31 %}{{ d }}st,
+    {% when 2 or 22 %}{{ d }}nd,
+    {% when 3 or 23 %}{{ d }}rd,
+    {% else %}{{ d }}th,
+    {% endcase %}
+    {{ post.date | date: "%Y" }}
+  </span>
 
   <h2>
   {% if site.lang == 'fi' %}
@@ -20,5 +32,37 @@ tagline:
   </div>
 
 </article>
-
+{% endfor %}
 <hr/>
+
+<ul class="pager"> 
+
+  {% if paginator.previous_page %}
+  <li class="previous">
+    {% if paginator.previous_page == 1 %}
+    <a href="{{ site.BASE_PATH }}/">&larr; {% t default.newer %}</a>
+    {% else %}
+    <a href="{{ site.BASE_PATH }}/{{ site.lang | replace: 'fi', '.'}}/{{ site.paginate_path | replace: ':num', paginator.previous_page }}">&larr; {% t default.newer %}</a>
+    {% endif %}
+  </li>
+  {% else %}
+  <li class="previous disabled">
+    <a>&larr; {% t default.newer %}</a>
+  </li>
+  {% endif %}
+  
+  <li>
+    <span class="page_number">{% t default.page %}: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  </li>
+
+  {% if paginator.next_page %}
+  <li class="next">
+    <a href="{{ site.BASE_PATH }}/{{ site.lang | replace: 'fi', '.'}}/{{ site.paginate_path | replace: ':num', paginator.next_page }}">{% translate default.older %} &rarr;</a>
+  </li>
+  {% else %}
+  <li class="next disabled">
+    <a>{% t default.older %} &rarr;</a>        
+  </li>
+  {% endif %}
+
+</ul>
